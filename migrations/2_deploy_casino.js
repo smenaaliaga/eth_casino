@@ -1,5 +1,5 @@
-const BetsContract = artifacts.require("BetsContract");
+const BetContract = artifacts.require("BetContract");
 
 module.exports = function (deployer) {
-  deployer.deploy(BetsContract);
+  deployer.deploy(BetContract);
 };

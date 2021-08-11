@@ -14,7 +14,7 @@ contract BetContract {
 
     mapping (uint256 => Bet) public bets;
 
-    function createBet(string memory _name, string memory _description, uint _bet) public returns (uint id) {
+    function createBet(string memory _name, string memory _description, uint _bet) public {
         bets[betCounter] = Bet(betCounter, _name, _description, _bet, true);
         betCounter++;
     }
