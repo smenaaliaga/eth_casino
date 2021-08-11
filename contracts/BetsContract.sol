@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity ^0.8.6;
 
 contract BetContract {
-    uint betCounter = 0;
+    uint256 public betCounter = 0;
 
     struct Bet {
-        uint id;
+        uint256 id;
         string name;
         string description;
         uint bet;
